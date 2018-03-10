@@ -8,7 +8,7 @@ then
     echo "Valores são iguais a: $a e b: $b"
 elif [ $a -gt $b ]
 then
-    echo "Valor de a: $a é maior do que a b: $b"
+    echo "Valor de a: $a é maior do que b: $b"
 elif [ $a -le $b ]
 then
     echo "Valor de a: $a é menor do que a b: $b"
