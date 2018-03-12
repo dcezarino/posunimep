@@ -11,7 +11,7 @@ then
 	echo "n3: $n3"
     echo "constante_n1: $constante_n1"
     
-# se n2 e n3 é diferente da constante_n1
+# se n2 e n3 são diferentes da constante_n1
 elif [ $n2 != $constante_n1 ] && [ $n3 != $constante_n1 ]
 then
 	echo "Ambas são diferentes"
