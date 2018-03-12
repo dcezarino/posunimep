@@ -3,15 +3,20 @@
 # -eq -> compara variáveis do tipo inteiro
 
 x="manha"
-y="manha"
-z="noite"
+y="tarde"
+z="manha"
 
+# se x é igual a y
 if [ $x == $y ] && [ $x != $z ]
 then
 	echo "São iguais x: $x e y: $y"
+
+# se x é igual a z e x é diferente de y
 elif [ $x == $z ] && [ $x != $y ]
 then
 	echo "São iguais x: $x e z: $z"
+	
+# x é diferente de y
 else
 	echo "x é diferente de y: $y e z: $z"
 fi

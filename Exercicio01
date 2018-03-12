@@ -1,14 +1,20 @@
 #!/bin/bash
 # condição variáveis
+
 a=10
 b=5
 
+# se a é igual a b
 if [ $a -eq $b ]
 then
     echo "Valores são iguais a: $a e b: $b"
+
+# se a é maior do que b
 elif [ $a -gt $b ]
 then
     echo "Valor de a: $a é maior do que b: $b"
+
+# se é menor do que b
 elif [ $a -le $b ]
 then
     echo "Valor de a: $a é menor do que a b: $b"
