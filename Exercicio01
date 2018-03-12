@@ -14,7 +14,7 @@ elif [ $a -gt $b ]
 then
     echo "Valor de a: $a é maior do que b: $b"
 
-# se é menor do que b
+# se a é menor do que b
 elif [ $a -le $b ]
 then
     echo "Valor de a: $a é menor do que a b: $b"
