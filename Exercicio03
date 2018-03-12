@@ -1,0 +1,28 @@
+#!/bin/bash
+	
+declare -r constante_n1="2"
+n2=2
+n3=5
+
+# se n2 e n3 são iguais a constante_n1
+if [ $n2 == $constante_n1 ] && [ $n3 == $constante_n1 ] 
+then
+    echo "n2: $n2"
+	echo "n3: $n3"
+    echo "constante_n1: $constante_n1"
+    
+# se n2 e n3 é diferente da constante_n1
+elif [ $n2 != $constante_n1 ] && [ $n3 != $constante_n1 ]
+then
+	echo "Ambas são diferentes"
+    
+# se n2 é diferente da constante_n1
+elif [ $n2 != $constante_n1 ] 
+then
+	echo "n2 é diferente de constante_n1"
+    
+# se n3 é diferente da constante_n1
+elif [ $n3 != $constante_n1 ] 
+then
+	echo "n3 é diferente da constante_n1"
+fi
