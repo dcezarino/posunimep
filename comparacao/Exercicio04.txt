@@ -1,0 +1,26 @@
+# Exercício 04
+# Fazer um script para verificar se o pagamento já foi efetuado.
+# Para isso deverá definir a data do pagamento. Ex. dia 15.
+# Depois coletar a data atual no sistema (somente o dia) e comparar se é igual ou superior ao dia do pagamento.
+# Caso seja: escreva pagamento realizado.
+# Caso negativo: Escreva que ainda não foram realizados.
+# Melhoria: Faça a conta de quantos dias ainda faltam para o recebimento.
+
+#!/bin/bash
+data=15
+
+echo "Informe o dia de pagamento no mês: "
+read dia
+
+if [ $dia -eq $data ]
+then
+        echo "Pagamento efetuado"
+
+elif [ $dia -lt $data ]
+then
+        echo "Pagamento não identificado"
+        echo -e "Faltam `expr $data - $dia` dia(s) para o pagamento ser efetuado!"
+else
+        echo "A conta está vencida e deve ser efetuado o pagamento no banco impresso na mesma!"
+
+fi
